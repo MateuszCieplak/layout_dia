@@ -1,7 +1,9 @@
+@import './utils/reset';
 @import 'utils';
 @import 'fonts';
 @import 'typography';
-
-body {
-  background: $c-gray;
-}
+@import './blocks/header';
+@import './blocks/navigation';
+@import './blocks/home';
+@import './blocks/title';
+@import './blocks/paragraph';

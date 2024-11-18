@@ -1,0 +1,34 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &__icons {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__logo {
+    background-image: url(../images/logo/header-Air.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 28px;
+    width: 46px;
+  }
+
+  &__burger {
+    background-image: url(../images/logo/header-burger.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+  }
+
+  &__paragraph {
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.5px;
+    letter-spacing: 5px;
+  }
+}
