@@ -1,4 +1,10 @@
 .home {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 0 20px;
+
   &__paragraph {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -6,6 +12,7 @@
     line-height: 27px;
     text-align: left;
     letter-spacing: 1px;
+    margin-bottom: 49px;
   }
 
   &__link {
@@ -22,10 +29,14 @@
     letter-spacing: 1px;
     text-align: center;
     text-decoration: none;
-    padding: 14px 94px;
+    padding: 14px 90px;
 
     &::after {
       content: 'Learn more';
     }
+  }
+
+  &__title {
+    margin-bottom: 32px;
   }
 }
