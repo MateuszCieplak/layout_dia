@@ -1,0 +1,26 @@
+.about__us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:rgba(108, 120, 139, 1);
+    ;
+  }
+}

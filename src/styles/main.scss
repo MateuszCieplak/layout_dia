@@ -2,6 +2,7 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './blocks/body';
 @import './blocks/header';
 @import './blocks/navigation';
 @import './blocks/home';
@@ -9,3 +10,6 @@
 @import './blocks/paragraph';
 @import './blocks/intro';
 @import './blocks/arrow';
+@import './blocks/main';
+@import './blocks/section';
+@import './blocks/about__us';
