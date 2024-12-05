@@ -1,5 +1,3 @@
-/* stylelint-disable comment-empty-line-before */
-/* stylelint-disable rule-empty-line-before */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -345,6 +343,11 @@ h1 {
   box-sizing: border-box;
   padding: 120px 20px;
 }
+.section--second {
+  padding: 0;
+  border-radius: 30px;
+  background-color: white;
+}
 
 .about__us {
   display: flex;
@@ -368,6 +371,67 @@ h1 {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: rgb(108, 120, 139);
+}
+
+.our__expertise {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+.our__expertise__title {
+  font-family: Poppins, sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52.8px;
+  text-align: center;
+  margin-top: 72px;
+  margin-bottom: 56px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.cards__item {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  padding-top: 50%;
+  margin-bottom: 32px;
+}
+.cards__image {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.cards__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards__title {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.cards__paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: rgb(108, 120, 139);
+  margin-bottom: 56px;
 }
 
 /*# sourceMappingURL=style.css.map */

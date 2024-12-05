@@ -3,4 +3,10 @@
   justify-content: center;
   box-sizing: border-box;
   padding: 120px 20px;
+
+  &--second {
+    padding: 0;
+    border-radius: 30px;
+    background-color: white;
+  }
 }
