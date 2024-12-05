@@ -350,6 +350,9 @@ h1 {
   border-radius: 30px;
   background-color: white;
 }
+.section--third {
+  padding: 0;
+}
 
 .about__us {
   display: flex;
@@ -434,6 +437,116 @@ h1 {
   text-align: center;
   color: rgb(108, 120, 139);
   margin-bottom: 56px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 20px 0;
+}
+.services__service {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.services__title {
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.6px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: rgb(37, 55, 87);
+  margin-bottom: 24px;
+}
+.services__title--small {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 3px;
+  text-align: start;
+  color: rgb(192, 205, 215);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.services__paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: rgb(108, 120, 139);
+  margin-bottom: 48px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+}
+.service__number {
+  box-sizing: border-box;
+  padding: 2px 20px;
+  width: 46px;
+  height: 24px;
+  border-radius: 23px;
+  background-color: rgb(233, 239, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.service__number--text {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: center;
+  color: rgb(32, 96, 246);
+}
+.service__text {
+  margin-bottom: 32px;
+}
+.service__paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+  color: rgb(108, 120, 139);
+}
+.service__box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+.service__box--text {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22.5px;
+  text-align: center;
+  color: rgb(51, 69, 99);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 96, 246);
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+.box__arrow {
+  background-image: url(../images/services/services-arrow-left.svg);
+  width: 16px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
