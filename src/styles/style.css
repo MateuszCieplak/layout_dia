@@ -356,6 +356,10 @@ h1 {
 .section--fourth {
   padding: 0;
 }
+.section--fiveth {
+  background-color: rgb(255, 255, 255);
+  padding: 72px 20px;
+}
 
 .about__us {
   display: flex;
@@ -557,7 +561,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   padding: 0 20px;
-  margin: 0 120px;
+  margin: 120px 0;
 }
 .testimonials__title {
   font-family: Poppins, sans-serif;
@@ -688,6 +692,56 @@ h1 {
   text-align: center;
   color: rgb(192, 205, 215);
   margin-bottom: 32px;
+}
+
+.vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.vision__title {
+  font-family: Poppins, sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52.8px;
+  text-align: center;
+  color: rgb(37, 55, 87);
+  margin-bottom: 24px;
+}
+.vision__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.vision__paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
+  color: rgb(108, 120, 139);
+}
+.vision__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: rgb(32, 96, 246);
+  text-decoration: none;
+}
+.vision__button::after {
+  content: "Apply";
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22.5px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
