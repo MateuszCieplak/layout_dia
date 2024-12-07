@@ -35,7 +35,7 @@
     />
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header" id="home">
       <div class="navigation">
         <div class="navigation__icons">
           <a
@@ -352,7 +352,94 @@
         </div>
       </section>
     </main>
-
+    <footer class="footer">
+      <div class="forms footer__forms">
+        <h2 class="forms__title">
+          Send us  a message
+        </h2>
+        <form class="form forms__form">
+          <div class="form__inputs">
+            <input type="email" name="email"
+              placeholder="Email" id="email"
+              class="form__input">
+            <input type="text"
+              placeholder="Name"
+              class="form__input">
+            <textarea type="text" rows="4"
+              placeholder="Message"
+              class="form__input form__input--textarea"></textarea>
+          </div>
+          <button class="form__button">
+            Send
+          </button>
+        </form>
+      </div>
+      <div class="contact-us footer__contact-us">
+        <h2 class="title contact-us__title">
+          Contact us
+        </h2>
+        <div class="call">
+          <h3 class="title contact-us__title--small">
+            Call us
+          </h3>
+          <div class="call__text">
+            <p class="paragraph call__paragraph">
+              654 321 987
+            </p>
+          </div>
+        </div>
+        <div class="visit">
+          <h3 class="title contact-us__title--small">
+            Visit us
+          </h3>
+          <div class="visit__text">
+            <p class="visit__paragraph">
+              2905 West Drive, Buffalo Grove
+            </p>
+          </div>
+        </div>
+        <div class="socials">
+          <h3 class="title contact-us__title--small">
+            our socials
+          </h3>
+          <div class="socials__icons">
+            <a href="." class="socials__icons--facebook"></a>
+            <a href="." class="socials__icons--twitter"></a>
+            <a href="." class="socials__icons--instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__navigation">
+        <a href="." class="footer__navigation__logo"></a>
+        <ul class="footer__navigation__list">
+          <li class="footer__navigation__item">
+            <a href="." class="footer__navigation__link">
+              About us
+            </a>
+          </li>
+          <li class="footer__navigation__item">
+            <a href="#home" class="footer__navigation__link">
+              Home
+            </a>
+          </li>
+          <li class="footer__navigation__item">
+            <a href="." class="footer__navigation__link">
+              Work
+            </a>
+          </li>
+          <li class="footer__navigation__item">
+            <a href="." class="footer__navigation__link">
+              Services
+            </a>
+          </li>
+          <li class="footer__navigation__item">
+            <a href="." class="footer__navigation__link">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="scripts/main.js"></script>
   </body>
 </html>
