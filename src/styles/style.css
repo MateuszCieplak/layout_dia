@@ -744,4 +744,203 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 120px;
+}
+.footer__elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(44, 44, 44);
+  box-sizing: border-box;
+  padding: 72px 20px 80px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__navigation__logo {
+  background-image: url(../images/logo/header-Air.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28px;
+  width: 46px;
+  margin-bottom: 50px;
+}
+.footer__navigation__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.footer__navigation__link {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.footer__navigation__link:hover {
+  color: rgb(32, 96, 246);
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.forms__title {
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.6px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 56px;
+}
+.form__input {
+  background-color: rgb(44, 44, 44);
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding-bottom: 17px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22.5px;
+  text-align: left;
+}
+.form__input:focus {
+  border-color: rgb(20, 78, 212);
+}
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(20, 78, 212);
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22.5px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.form__button:active {
+  background-color: rgb(44, 44, 44);
+  border: 2px solid rgb(20, 78, 212);
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+}
+.contact-us__title {
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 48px;
+}
+.contact-us__title--small {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(149, 149, 149);
+  margin-bottom: 8px;
+}
+.contact-us__elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.call__paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: rgb(255, 255, 255);
+}
+
+.visit__paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: rgb(255, 255, 255);
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.socials:first-child {
+  margin-bottom: 16px;
+}
+.socials__icons {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.socials__icons--facebook {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/socials-icons/socials-icon-facebook.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.socials__icons--x {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/socials-icons/socials-icon-x.svg);
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.socials__icons--instagram {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/socials-icons/socials-icon-instagram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=style.css.map */
