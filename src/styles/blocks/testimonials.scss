@@ -1,0 +1,29 @@
+.testimonials {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0 20px;
+margin:0 120px;
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    color: rgba(37, 55, 87, 1);
+    margin-bottom: 48px;
+
+    &--small {
+      font-family: Poppins, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 19.5px;
+      letter-spacing: 2px;
+      text-align: left;
+      text-transform: uppercase;
+      color: rgba(192, 205, 215, 1);
+      margin-bottom: 16px;
+    }
+  }
+}
