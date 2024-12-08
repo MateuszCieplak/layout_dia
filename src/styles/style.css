@@ -147,6 +147,7 @@ h1 {
 }
 .body {
   background-color: rgb(242, 246, 250);
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -941,6 +942,56 @@ h1 {
   background-image: url(../images/socials-icons/socials-icon-instagram.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgb(44, 44, 44);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+}
+.menu__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.menu:target {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.links__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.links__link {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
