@@ -1,5 +1,3 @@
-/* stylelint-disable comment-empty-line-before */
-/* stylelint-disable rule-empty-line-before */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -150,6 +148,10 @@ h1 {
   scroll-behavior: smooth;
 }
 
+.page__body--with-menu {
+  overflow: hidden;
+}
+
 .header {
   font-family: Poppins, sans-serif;
   font-size: 52px;
@@ -173,6 +175,7 @@ h1 {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
   margin: 20px 20px 49px;
 }
@@ -202,6 +205,30 @@ h1 {
   line-height: 19.5px;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+.navigation__link {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: transform 0.3s;
+}
+.navigation__link:hover {
+  transform: scale(1.2);
+}
+.navigation__link::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgb(32, 96, 246);
+  position: absolute;
+  bottom: -8px;
 }
 
 .home {
@@ -234,7 +261,7 @@ h1 {
   letter-spacing: 1px;
   text-align: center;
   text-decoration: none;
-  padding: 14px 90px;
+  padding: 14px 20px;
 }
 .home__link::after {
   content: "Learn more";
@@ -258,7 +285,6 @@ h1 {
   font-weight: 400;
   line-height: 27px;
   text-align: left;
-  letter-spacing: 1px;
 }
 
 .intro__container {
@@ -324,6 +350,7 @@ h1 {
   width: 32px;
   height: 32px;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 .arrow--left {
   background-image: url(../images/slider/slide-left.svg);
@@ -338,6 +365,9 @@ h1 {
   background-repeat: no-repeat;
   background-color: white;
   border-radius: 50%;
+}
+.arrow:hover {
+  transform: scale(1.2);
 }
 
 .section {
@@ -436,6 +466,7 @@ h1 {
   line-height: 28px;
   text-align: center;
   margin-bottom: 16px;
+  letter-spacing: 0;
 }
 .cards__paragraph {
   font-family: "Open Sans", sans-serif;
@@ -463,7 +494,7 @@ h1 {
   font-weight: 600;
   line-height: 41.6px;
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: rgb(37, 55, 87);
   margin-bottom: 24px;
 }
@@ -918,30 +949,32 @@ h1 {
 }
 .socials__icons {
   display: flex;
-  align-items: center;
   gap: 41px;
 }
-.socials__icons--facebook {
+.socials__icons--icon {
+  color: rgb(255, 255, 255);
+}
+.socials__icons--icon:hover {
+  fill: rgb(20, 78, 212);
+}
+.socials__icons--logo {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials__icons--fb {
   width: 24px;
   height: 24px;
-  background-image: url(../images/socials-icons/socials-icon-facebook.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .socials__icons--x {
   width: 24px;
   height: 24px;
-  background-image: url(../images/socials-icons/socials-icon-x.svg);
-  color: white;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-.socials__icons--instagram {
+.socials__icons--ig {
   width: 24px;
   height: 24px;
-  background-image: url(../images/socials-icons/socials-icon-instagram.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .menu {

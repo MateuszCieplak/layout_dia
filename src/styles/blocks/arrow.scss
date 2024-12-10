@@ -2,6 +2,7 @@
   width: 32px;
   height: 32px;
   cursor: pointer;
+  transition: transform 0.3s;
 
   &--left {
     background-image: url(../images/slider/slide-left.svg);
@@ -17,5 +18,9 @@
     background-repeat: no-repeat;
     background-color: white;
     border-radius: 50%;
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 }

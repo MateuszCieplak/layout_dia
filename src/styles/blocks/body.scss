@@ -1,4 +1,8 @@
 .body {
   background-color: rgba(242, 246, 250, 1.0);
   scroll-behavior: smooth;
- }
+}
+
+.page__body--with-menu {
+  overflow: hidden;
+}

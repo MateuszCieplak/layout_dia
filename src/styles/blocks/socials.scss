@@ -9,32 +9,37 @@
 
   &__icons {
     display: flex;
-    align-items: center;
     gap: 41px;
 
-    &--facebook {
+    &--icon {
+      color: rgba(255, 255, 255, 1);
+
+      &:hover {
+        fill: rgba(20, 78, 212, 1);
+      }
+    }
+
+    &--logo {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--fb {
       width: 24px;
       height: 24px;
-      background-image: url(../images/socials-icons/socials-icon-facebook.svg);
-      background-position: center;
-      background-repeat: no-repeat;
     }
 
     &--x {
       width: 24px;
       height: 24px;
-      background-image: url(../images/socials-icons/socials-icon-x.svg);
-      color: white;
-      background-position: center;
-      background-repeat: no-repeat;
     }
 
-    &--instagram {
+    &--ig {
       width: 24px;
       height: 24px;
-      background-image: url(../images/socials-icons/socials-icon-instagram.svg);
-      background-position: center;
-      background-repeat: no-repeat;
     }
   }
 }
