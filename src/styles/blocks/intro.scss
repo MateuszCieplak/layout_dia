@@ -26,6 +26,7 @@
 
   &__images {
     &__image {
+      opacity: 0;
       object-fit: cover;
       border-radius: 30px;
       width: 100%;
@@ -39,6 +40,10 @@
         height: 680px;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
+      }
+
+      &--active {
+        opacity: 1;
       }
     }
   }

@@ -490,6 +490,7 @@ h1 {
   }
 }
 .intro__images__image {
+  opacity: 0;
   object-fit: cover;
   border-radius: 30px;
   width: 100%;
@@ -505,6 +506,9 @@ h1 {
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
   }
+}
+.intro__images__image--active {
+  opacity: 1;
 }
 .intro__arrows {
   display: flex;
