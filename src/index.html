@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -47,7 +47,37 @@
             class="navigation__burger"
           ></a>
         </div>
-
+        <div class="top__bar navigation__top__bar">
+          <div class="top__bar__box">
+            <ul class="top__bar__list">
+              <li class="top__bar__item">
+                <a href="#about-us" class="top__bar__link">
+                  About us
+                </a>
+              </li>
+              <li class="top__bar__item">
+                <a href="#work" class="top__bar__link">
+                  Work
+                </a>
+              </li>
+              <li class="top__bar__item">
+                <a href="#services" class="top__bar__link">
+                  Services
+                </a>
+              </li>
+              <li class="top__bar__item">
+                <a href="#testimonials" class="top__bar__link">
+                  Testimonials
+                </a>
+              </li>
+              <li class="top__bar__item">
+                <a href="#contact-us" class="top__bar__link">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <a href="#contact-us" class="navigation__link">Hire us</a>
       </div>
       <div class= "header__content">
@@ -59,36 +89,39 @@
           </p>
           <a
             class="home__link"
-            href=" "
-          ></a>
+            href="#work"
+          >
+            <p class="home__link--text">
+              Learn more
+            </p>
+          </a>
         </div>
         <div class= "intro">
+          <div class ="intro__images">
+            <img src="./images/slider/slide-img-1.jpg" alt="slide__img-1"
+              class= "intro__images__image">
+            <img src="./images/slider/slide-img-2.jpg" alt="slide__img-2"
+              class= "intro__images__image">
+            <img src="./images/slider/slide-img-3.jpg" alt="slide__img-3"
+              class= "intro__images__image">
+          </div>
           <div class="intro__container">
-            <div class="intro__content">
-              <div class="intro__arrows">
-                <a class="arrow arrow--left"></a>
-                <a class="arrow arrow--right"></a>
-              </div>
-              <div class= "intro__info">
-                <h3 class= "intro__title">
-                  INtro
-                </h3>
-                <p class="intro__text">
-                  By the same illusion which lifts the horizon.
-                </p>
-              </div>
+            <div class="intro__arrows">
+              <a class="arrow arrow--left" id="leftArrow"></a>
+              <a class="arrow arrow--right" id="rightArrow"></a>
             </div>
-            <div class ="intro__images">
-              <img src="./images/slider/slide-img-1.jpg" alt="slide__img-1"
-                class= "intro__images__image">
-              <img src="./images/slider/slide-img-2.jpg" alt="slide__img-2"
-                class= "intro__images__image">
-              <img src="./images/slider/slide-img-3.jpg" alt="slide__img-3"
-                class= "intro__images__image">
+            <div class= "intro__info">
+              <h3 class= "title intro__title">
+                INtro
+              </h3>
+              <p class="intro__text">
+                By the same illusion which lifts the horizon.
+              </p>
             </div>
           </div>
         </div>
       </div>
+
     </header>
     <div class="menu" id="menu">
       <div class="menu__navigation">
@@ -130,7 +163,7 @@
       </div>
     </div>
     <main class="main">
-      <section class="section" id="about-us">
+      <section class="section section--first" id="about-us">
         <div class="about__us">
           <h2 class="title about__us__title">
             Who we are
@@ -146,167 +179,173 @@
             Our expertise
           </h2>
           <div class="cards">
-            <div class="cards__item">
-              <img src="./images/our__expertise/image-1.jpg" alt="our__expertise__image-1"
-                class="cards__image">
+            <div class="card">
+              <img src="./images/our__expertise/experties-1.png" alt="our__expertise__image-1"
+                class="card__image">
+              <div class="card__text">
+                <h3 class="title card__title">
+                  Branding
+                </h3>
+                <p class="paragraph card__paragraph">
+                  We create additional value for companies, products, services as well as verbal and visual ways to deliver it to the audience.
+                </p>
+              </div>
             </div>
-            <div class="cards__text">
-              <h3 class="title cards__title">
-                Branding
-              </h3>
-              <p class="paragraph cards__paragraph">
-                We create additional value for companies, products, services as well as verbal and visual ways to deliver it to the audience.
-              </p>
+            <div class="card">
+              <div class="card__item">
+                <img src="./images/our__expertise/experties-2.png" alt="our__expertise__image-2"
+                  class="card__image">
+              </div>
+              <div class="card__text">
+                <h3 class="title card__title">
+                  Communication
+                </h3>
+                <p class="paragraph card__paragraph">
+                  We strive to create communications that can increase media performance. We use everything — words, meanings, stories, art, movies.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="cards">
-            <div class="cards__item">
-              <img src="./images/our__expertise/image-2.jpg" alt="our__expertise__image-2"
-                class="image cards__image">
+            <div class="card">
+              <div class="card__item">
+                <img src="./images/our__expertise/experties-3.png" alt="our__expertise__image-3"
+                  class="card__image">
+              </div>
+              <div class="card__text">
+                <h3 class="title card__title">
+                  Strategy
+                </h3>
+                <p class="paragraph card__paragraph">
+                  We create business growth strategies, from the moment of its birth to the achievement of the necessary business indicators.
+                </p>
+              </div>
             </div>
-            <div class="cards__image--2"></div>
-            <h3 class="title cards__title">
-              Communication
-            </h3>
-            <p class="paragraph cards__paragraph">
-              We strive to create communications that can increase media performance. We use everything — words, meanings, stories, art, movies.
-            </p>
-          </div>
-          <div class="cards">
-            <div class="cards__item">
-              <img src="./images/our__expertise/image-3.jpg" alt="our__expertise__image-3"
-                class="cards__image">
-            </div>
-            <div class="image cards__image--3"></div>
-            <h3 class="title cards__title">
-              Strategy
-            </h3>
-            <p class="paragraph cards__paragraph">
-              We create business growth strategies, from the moment of its birth to the achievement of the necessary business indicators.
-            </p>
           </div>
         </div>
       </section>
       <section class="section section--third" id="services">
         <div class="services">
-          <h3 class="title services__title--small">
-            Services
-          </h3>
-          <h2 class="title services__title">
-            Air is a full service creative agency
-          </h2>
-          <div class="services__text">
-            <p class="paragraph services__paragraph">
-              Deep analytics, strong strategy and bright creative ideas.
-              <br>
-              <br>
-              We are sure that first-rate job is possible only if all three components are united.
-            </p>
+          <div class="services__box">
+            <h3 class="title services__title--small">
+              Services
+            </h3>
+            <h2 class="title services__title">
+              Air is a full service creative agency
+            </h2>
+            <div class="services__text">
+              <p class="paragraph services__paragraph">
+                Deep analytics, strong strategy and bright creative ideas.
+                <br>
+                <br>
+                We are sure that first-rate job is possible only if all three components are united.
+              </p>
+            </div>
           </div>
           <div class="services__service">
-            <div class="service service--1">
-              <div class="service__number">
-                <p class="service__number--text">
-                  001
-                </p>
-              </div>
-              <div class="service__text">
-                <p class="paragraph service__paragraph">
-                  Brand Development
-                  <br>
-                  Copywriting
-                  <br>
-                  Logo & Webite Design
-                  <br>
-                  Packaging
-                </p>
-              </div>
-              <a href="." class="service__box">
-                <div class="box">
-                  <div class="box__arrow"></div>
+            <div class="service">
+              <div class="service__card">
+                <div class="service__number">
+                  <p class="service__number--text">
+                    001
+                  </p>
                 </div>
-                <div class="service__box--text">
-                  Learn more
+                <div class="service__text">
+                  <p class="paragraph service__paragraph">
+                    Brand Development
+                    <br>
+                    Copywriting
+                    <br>
+                    Logo & Webite Design
+                    <br>
+                    Packaging
+                  </p>
                 </div>
-              </a>
-            </div>
-            <div class="service service--2">
-              <div class="service__number">
-                <p class="service__number--text">
-                  002
-                </p>
+                <a href="." class="service__box">
+                  <div class="box">
+                    <div class="box__arrow"></div>
+                  </div>
+                  <div class="service__box--text">
+                    Learn more
+                  </div>
+                </a>
               </div>
-              <div class="service__text">
-                <p class="paragraph service__paragraph">
-                  Brand Development
-                  <br>
-                  Copywriting
-                  <br>
-                  Logo & Webite Design
-                  <br>
-                  Packaging
-                </p>
+              <div class="service__card service--up">
+                <div class="service__number">
+                  <p class="service__number--text">
+                    002
+                  </p>
+                </div>
+                <div class="service__text">
+                  <p class="paragraph service__paragraph">
+                    Brand Development
+                    <br>
+                    Copywriting
+                    <br>
+                    Logo & Webite Design
+                    <br>
+                    Packaging
+                  </p>
+                </div>
+                <a href="." class="service__box">
+                  <div class="box">
+                    <div class="box__arrow"></div>
+                  </div>
+                  <div class="service__box--text">
+                    Learn more
+                  </div>
+                </a>
               </div>
-              <a href="." class="service__box">
-                <div class="box">
-                  <div class="box__arrow"></div>
+              <div class="service__card">
+                <div class="service__number">
+                  <p class="service__number--text">
+                    003
+                  </p>
                 </div>
-                <div class="service__box--text">
-                  Learn more
+                <div class="service__text">
+                  <p class="paragraph service__paragraph">
+                    Brand Development
+                    <br>
+                    Copywriting
+                    <br>
+                    Logo & Webite Design
+                    <br>
+                    Packaging
+                  </p>
                 </div>
-              </a>
-            </div>
-            <div class="service service--3">
-              <div class="service__number">
-                <p class="service__number--text">
-                  003
-                </p>
+                <a href="." class="service__box">
+                  <div class="box">
+                    <div class="box__arrow"></div>
+                  </div>
+                  <div class="service__box--text">
+                    Learn more
+                  </div>
+                </a>
               </div>
-              <div class="service__text">
-                <p class="paragraph service__paragraph">
-                  Brand Development
-                  <br>
-                  Copywriting
-                  <br>
-                  Logo & Webite Design
-                  <br>
-                  Packaging
-                </p>
+              <div class="service__card service--up">
+                <div class="service__number">
+                  <p class="service__number--text">
+                    004
+                  </p>
+                </div>
+                <div class="service__text">
+                  <p class="paragraph service__paragraph">
+                    Brand Development
+                    <br>
+                    Copywriting
+                    <br>
+                    Logo & Webite Design
+                    <br>
+                    Packaging
+                  </p>
+                </div>
+                <a href="." class="service__box">
+                  <div class="box">
+                    <div class="box__arrow"></div>
+                  </div>
+                  <div class="service__box--text">
+                    Learn more
+                  </div>
+                </a>
               </div>
-              <a href="." class="service__box">
-                <div class="box">
-                  <div class="box__arrow"></div>
-                </div>
-                <div class="service__box--text">
-                  Learn more
-                </div>
-              </a>
-            </div>
-            <div class="service service--4">
-              <div class="service__number">
-                <p class="service__number--text">
-                  004
-                </p>
-              </div>
-              <div class="service__text">
-                <p class="paragraph service__paragraph">
-                  Brand Development
-                  <br>
-                  Copywriting
-                  <br>
-                  Logo & Webite Design
-                  <br>
-                  Packaging
-                </p>
-              </div>
-              <a href="." class="service__box">
-                <div class="box">
-                  <div class="box__arrow"></div>
-                </div>
-                <div class="service__box--text">
-                  Learn more
-                </div>
-              </a>
             </div>
           </div>
         </div>
@@ -387,7 +426,11 @@
               We are sure that first-rate job is possible only if all three components are united.
             </p>
           </div>
-          <a href="." class="vision__button"></a>
+          <a href="#contact-us" class="vision__button">
+            <p class="vision__button--text">
+              Apply
+            </p>
+          </a>
         </div>
       </section>
     </main>
@@ -424,9 +467,11 @@
                 Call us
               </h3>
               <div class="call__text">
-                <p class="paragraph call__paragraph">
-                  654 321 987
-                </p>
+                <a href="tel: 654 321 987" class="call__link">
+                  <p class="paragraph call__paragraph">
+                    654 321 987
+                  </p>
+                </a>
               </div>
             </div>
             <div class="visit">
@@ -434,9 +479,12 @@
                 Visit us
               </h3>
               <div class="visit__text">
-                <p class="paragraph visit__paragraph">
-                  2905 West Drive, Buffalo Grove
-                </p>
+                <a target="_blank" href="https://www.google.pl/maps/search/2905+West+Drive,+Buffalo+Grove/@42.1698437,-87.9935228,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                class="visit__link">
+                  <p class="paragraph visit__paragraph">
+                    2905 West Drive, Buffalo Grove
+                  </p>
+                </a>
               </div>
             </div>
             <div class="socials">

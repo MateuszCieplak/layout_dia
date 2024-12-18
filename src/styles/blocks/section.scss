@@ -1,25 +1,48 @@
+@use '../utils/mixins' as *;
+
 .section {
-  display: flex;
-  justify-content: center;
   box-sizing: border-box;
-  padding: 120px 20px;
+
+
+  &--first {
+    @include grid;
+  }
 
   &--second {
-    padding: 0;
     border-radius: 30px;
     background-color: white;
   }
 
   &--third {
-    padding: 0;
+    padding: 120px 20px 0;
+
+    @include for-tablet {
+      padding-top: 148px;
+      padding-inline: 41px;
+    }
+
+    @include for-small-desktop {
+      padding-top: 250px;
+      padding-inline: 52px;
+    }
   }
 
   &--fourth {
     padding: 0;
+
+    @include for-small-desktop {
+      padding-inline: 52px;
+    }
   }
 
   &--fiveth {
     background-color: rgba(255, 255, 255, 1);
     padding: 72px 20px;
+
+    @include for-tablet {
+      background-image: url(../images/vision/background-img.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }

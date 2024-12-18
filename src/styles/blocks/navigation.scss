@@ -1,9 +1,21 @@
+@use '../utils/mixins' as *;
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  margin: 20px 20px 49px;
+  padding-inline: 20px;
+  padding-block: 20px;
+
+  @include for-tablet {
+    padding-inline: 41px;
+  }
+
+  @include for-small-desktop {
+    padding-inline: 54px;
+    padding-block: 48px;
+  }
 
   &__icons {
     display: flex;
@@ -17,6 +29,11 @@
     background-size: cover;
     height: 28px;
     width: 46px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__burger {
@@ -25,6 +42,20 @@
     background-repeat: no-repeat;
     height: 24px;
     width: 24px;
+
+    @include for-small-desktop {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include for-small-desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__paragraph {
@@ -50,7 +81,7 @@
     transition: transform 0.3s;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 
     &::before {
