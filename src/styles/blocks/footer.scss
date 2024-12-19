@@ -10,16 +10,12 @@
   &__elements {
     background-color: rgba(44, 44, 44, 1);
     box-sizing: border-box;
-    padding: 72px 20px 80px;
+    padding-bottom: 80px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 
     @include grid;
     @include padding-inline;
-  
-    @include for-small-desktop {
-      padding-top: 180px;
-    }
   }
 
   &__navigation {
