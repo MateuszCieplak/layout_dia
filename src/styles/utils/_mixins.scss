@@ -39,20 +39,40 @@
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
+  gap: 20px;
 
   @include for-tablet {
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 30px;
+    gap: 30px;
   }
 
   @include for-small-desktop {
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 20px;
+    gap: 20px;
   }
 
   @include for-desktop {
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 30px;
+    gap: 30px;
+  }
+}
+
+@mixin padding-inline {
+  padding-inline: 20px;
+
+  @include for-tablet {
+    padding-inline: 41px;
+  }
+
+  @include for-small-desktop {
+    padding-inline: 54px;
+  }
+
+  @include the-design {
+    padding-inline: 227px;
+  }
+
+  @include large-screens {
+    padding-inline: 707px;
   }
 }

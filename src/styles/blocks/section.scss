@@ -6,43 +6,44 @@
 
   &--first {
     @include grid;
+    @include padding-inline;
   }
 
   &--second {
     border-radius: 30px;
     background-color: white;
+
+    @include padding-inline;
   }
 
   &--third {
-    padding: 120px 20px 0;
+    padding-top: 120px;
 
     @include for-tablet {
       padding-top: 148px;
-      padding-inline: 41px;
     }
 
     @include for-small-desktop {
       padding-top: 250px;
-      padding-inline: 52px;
     }
+
+    @include padding-inline;
   }
 
   &--fourth {
-    padding: 0;
-
-    @include for-small-desktop {
-      padding-inline: 52px;
-    }
+    @include padding-inline;
   }
 
   &--fiveth {
     background-color: rgba(255, 255, 255, 1);
-    padding: 72px 20px;
+    padding-block: 72px;
 
     @include for-tablet {
       background-image: url(../images/vision/background-img.png);
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    @include padding-inline;
   }
 }

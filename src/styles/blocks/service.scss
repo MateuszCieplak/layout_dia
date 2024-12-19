@@ -13,27 +13,27 @@
   &__card {
     display: flex;
     flex-direction: column;
+    height: 264px;
     box-sizing: border-box;
     padding: 32px;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 1);
     grid-column: span 2;
-    transition: all 0.3s;
     margin-bottom: 24px;
 
     @include for-tablet {
-      grid-column: span 3;
+      grid-column: 1 / 4;
+      width: auto;
       margin-bottom: 0;
     }
 
     @include for-small-desktop {
-      width: 214px;
+      width: auto;
+      grid-column: 7 / 10;
       margin-bottom: 0;
     }
 
-    &:hover {
-      transform: scale(1.1);
-    }
+    @include hover (transform, scale(1.1));
   }
 
   &__number {
@@ -60,6 +60,7 @@
 
   &__text {
     margin-bottom: 32px;
+    width: 200px;
   }
 
   &__paragraph {
@@ -76,6 +77,7 @@
     align-items: center;
     gap: 16px;
     text-decoration: none;
+    width: 200px;
 
     &--text {
       font-family: Poppins, sans-serif;
@@ -89,6 +91,7 @@
 
   &--up {
     @include for-tablet {
+      grid-column: 4 / 7;
       transform: translateY(-50%);
 
       &:hover {
@@ -98,12 +101,7 @@
     }
 
     @include for-small-desktop {
-      transform: translateY(-50%);
-
-      &:hover {
-        transform: translateY(-50%) scale(1.1);
-        box-shadow: 0 9px 18px 0 rgba(37, 41, 49, 0.03);
-      }
+      grid-column: 10 / 13;
     }
   }
 }

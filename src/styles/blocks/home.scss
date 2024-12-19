@@ -2,15 +2,15 @@
 
 .home {
   box-sizing: border-box;
-  padding-inline: 20px;
 
-  @include for-tablet {
-    padding-inline: 41px;
-  }
+  @include padding-inline;
 
   @include for-small-desktop {
     grid-column: 1 / 7;
-    padding-inline: 54px;
+  }
+
+  @include the-design {
+    grid-column: 1 / 8;
   }
 
   &__paragraph {
@@ -20,7 +20,7 @@
     line-height: 27px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
-    margin-bottom: 49px;
+    margin-bottom: 72px;
 
     @include for-tablet {
       width: 362px;
@@ -53,20 +53,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: transform 0.3s;
       width: 100%;
       height: 100%;
-      
-      &:hover {
-        transform: scale(1.1);
-      }
+
+      @include hover (transform, scale(1.1));
     }
 
     @include for-tablet {
-      width: 264px;
-    }
-
-    @include for-small-desktop {
       width: 264px;
     }
   }

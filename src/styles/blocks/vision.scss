@@ -36,7 +36,11 @@
     }
 
     @include for-small-desktop {
-      grid-column: 3 / 11;
+      grid-column: 1 / 13;
+    }
+
+    @include for-desktop {
+      max-width: 1 / 13;
     }
   }
 
@@ -47,6 +51,10 @@
     line-height: 33px;
     text-align: center;
     color: rgba(108, 120, 139, 1);
+
+    @include for-desktop {
+      max-width: 754px;
+    }
   }
 
   &__button {
@@ -81,11 +89,8 @@
       width: 100%;
       height: 100%;
       color: rgba(255, 255, 255, 1);
-      transition: transform 0.3s;
 
-      &:hover {
-        transform: scale(1.1);
-      }
+      @include hover (transform, scale(1.1));
     }
   }
 }

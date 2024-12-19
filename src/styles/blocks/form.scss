@@ -26,6 +26,16 @@
     line-height: 22.5px;
     text-align: left;
 
+    @include for-tablet{
+      margin-bottom: 48px;
+    }
+
+    &--textarea {
+      @include for-tablet {
+        margin-bottom: 80px;
+      }
+    }
+
     &:focus {
       border-color: rgba(20, 78, 212, 1);
     }

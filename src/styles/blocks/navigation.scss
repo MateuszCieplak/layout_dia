@@ -5,17 +5,14 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding-inline: 20px;
   padding-block: 20px;
 
-  @include for-tablet {
-    padding-inline: 41px;
-  }
 
   @include for-small-desktop {
-    padding-inline: 54px;
     padding-block: 48px;
   }
+
+  @include padding-inline;
 
   &__icons {
     display: flex;
@@ -29,11 +26,8 @@
     background-size: cover;
     height: 28px;
     width: 46px;
-    transition: transform 0.3s;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+    @include hover(transform, scale(1.1));
   }
 
   &__burger {
@@ -78,11 +72,8 @@
     text-align: center;
     color: rgba(255, 255, 255, 1);
     position: relative;
-    transition: transform 0.3s;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+    @include hover (transform, scale(1.1));
 
     &::before {
       content: "";

@@ -9,6 +9,10 @@
     height: 676px;
   }
 
+  @include the-design {
+    grid-column: 8 / 13;
+  }
+
   &__container {
     z-index: 1;
     display: flex;
@@ -21,6 +25,8 @@
       padding-inline: 78px;
       flex-direction: row;
       gap: 24px;
+      align-items: center;
+      justify-content: start;
     }
   }
 
@@ -37,7 +43,7 @@
       right: 0;
 
       @include for-small-desktop {
-        height: 680px;
+        height: 100%;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
       }
