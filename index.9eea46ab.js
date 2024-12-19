@@ -1,0 +1,2 @@
+const e=document.querySelectorAll(".intro__images__image"),t=document.getElementById("leftArrow"),i=document.getElementById("rightArrow");let n=0;function c(){e.forEach((e,t)=>{e.classList.remove("intro__images__image--active"),t===n&&e.classList.add("intro__images__image--active")})}function a(t){n=(n+t+e.length)%e.length,c()}t.addEventListener("click",()=>a(-1)),i.addEventListener("click",()=>a(1)),c();
+//# sourceMappingURL=index.9eea46ab.js.map
