@@ -7,11 +7,13 @@
 
   @include for-tablet {
     grid-column: 1 / 5;
-    padding-bottom: 140px;
+    padding: 120px 0 140px;
   }
 
   @include for-small-desktop {
-    padding-top: 0;
+    justify-content: start;
+    padding-top: 180px;
+    padding-bottom: 0;
     grid-column: 7 / 12;
   }
 

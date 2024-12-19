@@ -18,6 +18,12 @@
     @include padding-inline;
   }
 
+  &__forms {
+    @include for-small-desktop {
+      margin-bottom: 120px;
+    }
+  }
+
   &__navigation {
     display: flex;
     flex-direction: column;
