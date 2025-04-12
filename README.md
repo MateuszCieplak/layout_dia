@@ -1,5 +1,5 @@
 # Dia Landing Page  
-[Live Demo](https://your-demo-link.com)  
+[Live Demo](https://mateuszcieplak.github.io/layout_dia/)  
 
 The **Dia Landing Page** is a fully responsive and pixel-perfect landing page implemented based on a Figma design. The project uses semantic HTML5, SCSS with BEM methodology, and features multiple interactive UI elements.
 
